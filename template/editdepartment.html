@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/updatedepartment/{{b.id}}" method="POST">{%csrf_token%}
+    <label>department</label>
+    <input type="text" placeholder="chose department" name="department" value="{{b.department}}">
+    <br>
+    <br>
+    <label>status</label>
+    <input type="text" placeholder="chose status" name="status" value="{{b.status}}">
+    <br>
+    <br>
+
+    <input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<table class="table table-striped table-dark">
+    <tr>
+
+        <th>name</th>
+        <th>email</th>
+        <th>number</th>
+        <th>address</th>
+        <th>department</th>
+        <th>education qualification</th>
+        <th>experience</th>
+        <th>dr id</th>
+
+    </tr>
+    {%for g in a%}
+    <tr>
+        <td>{{g.name}}</td>
+        <td>{{g.email}}</td>
+        <td>{{g.number}}</td>
+        <td>{{g.address}}</td>
+        <td>{{g.department}}</td>
+        <td>{{g.educationqualification}}</td>
+        <td>{{g.experience}}</td>
+        <td>{{g.drid}}</td>
+         <td><a href="/editdoctor/{{g.id}}">edit</a></td>
+        <td><a href="/deletedoctor/{{g.id}}">delete</a></td>
+
+
+    </tr>
+
+{%endfor%}
+
+
+</table>
+</body>
+</html>

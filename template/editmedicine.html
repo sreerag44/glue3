@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/updatemedicine/{{b.id}}" method="POST">{%csrf_token%}
+    <label>Medicine Name</label>
+    <input type="text" placeholder="enter your medicine name" name="medicinename" value="{{b.medicinename}}">
+    <br>
+    <br>
+    <label>Medicine Code</label>
+    <input type="text" placeholder="enter your medicine code " name="medicinecode" value="{{b.medicinecode}}">
+    <br>
+    <br>
+    <label>Medicine Price</label>
+    <input type="text" placeholder="enter your medicine price" name="medicineprice" value="{{b.medicineprice}}">
+    <br>
+    <br>
+    <label>Amount of medicine</label>
+    <input type="text" placeholder="enter your amount of medicine" name="amountofmedicine" value="{{b.amounofmedicine}}">
+    <br>
+    <br>
+    <label>Expiry Date</label>
+    <input type="text" placeholder="expiry date" name="expirydate" value="{{b.expirydate}}">
+    <br>
+    <br>
+
+       <input type="submit">
+
+</body>
+</htm
